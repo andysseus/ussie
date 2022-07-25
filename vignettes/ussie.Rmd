@@ -19,6 +19,8 @@ library(ussie)
 library(dplyr)
 ```
 
+ussie let's you work with european football data from the engsoccerdata package by making standard tibbles for each country
+
 ```{r matches_italy}
 matches_italy <- uss_make_matches(engsoccerdata::italy, "Italy")
 glimpse(matches_italy)
