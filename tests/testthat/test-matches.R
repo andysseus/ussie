@@ -12,4 +12,6 @@ test_that("uss_make_matches works", {
 
   # check that tier is a variable of type factor
   expect_s3_class(italy$tier, "factor")
+
+  expect_snapshot(dplyr::glimpse(italy))
 })
